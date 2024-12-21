@@ -2,7 +2,9 @@ import os
 import streamlit as st
 
 from utils import print_messages, StreamHandler
-from langchain_openai import ChatOpenAI
+# from langchain_openai import ChatOpenAI
+from langchain.chat_models import ChatOpenAI
+
 from langchain_core.messages import ChatMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.output_parsers import StrOutputParser
